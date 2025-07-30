@@ -15,7 +15,7 @@ public class Solution {
         float d=sc.nextFloat();
         float e=sc.nextFloat();
         double total=a+b+c+d+e;
-        double average = total / 5.0;
+        double average = total / 5;
         String grade;
         if (average == 100){
             grade = "S";
