@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in =new Scanner(System.in);
+        int n =in.nextInt();
+        int m=n;
+        int sum=0;
+        
+        if(n<100 ||n>999){
+            System.out.println("No");
+        }
+        else{
+            while(n!=0){
+                int l=n%10;
+                int c=l*l*l;
+                sum=sum+c;
+                n=n/10;
+                
+            }
+            if(sum==m){
+            System.out.println("Yes");  }
+        }
+    }
+}
